@@ -100,8 +100,6 @@ img {
 
 .header {
   border: 1px solid #E7E9FC;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-container{
@@ -111,6 +109,7 @@ img {
 .header-navigation {
 display: flex;
 flex-grow: 1;
+align-items: center;
 }
 
 .logo{
@@ -127,6 +126,8 @@ display: flex;
 }
 
 .heder-menu-link {
+  padding-top: 24px;
+    padding-bottom: 24px;
     font-weight: 500;
     color: #2e2f42;
 }
@@ -151,7 +152,8 @@ display: flex;
 }
 
 .heder-address-link {
- 
+padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .heder-address-link:hover,
@@ -174,6 +176,8 @@ display: flex;
 
 .hero {
   background-color: #2e2f42 ;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-container {
@@ -187,7 +191,9 @@ display: flex;
   text-align: center;
   color: #fff; 
   max-width: 496px;
-  margin: 188px auto 0;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -198,10 +204,11 @@ display: flex;
   color: #fff;
   line-height: 1.5;
   background-color: #4d5ae5;
+  min-width: 169px;
   border-radius: 4px;
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin: 48px auto 188px;
+  margin: 0 auto;
   
 }
 
@@ -219,7 +226,17 @@ background-color: #404BBF;
 }
 
 .feature-title {
-  display: none;
+position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 margin-bottom: 72px;
 }
 
@@ -261,6 +278,7 @@ gap: 24px;
 }
 
 .team-list-item {
+  border-radius: 0px 0px 4px 4px;
  background-color: #FFFFFF;
  width: 264px;
  width: calc((100% - 72px) / 4);
@@ -268,23 +286,28 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 }
 
+.container-team-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .team-list-title {
   text-align: center;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
 
 .team-list-text {
     text-align: center;
-  margin-bottom: 32px;
 }
 
 /*------------------------------*/
 
 /*---------------------section Our Portfolio-------------------*/
 
-.portfolio {}
+.portfolio {
+  padding: 32px 16px;
+}
 
 .portfolio-titel {
   margin-bottom: 72px;
@@ -298,7 +321,7 @@ column-gap: 24px;
 }
 
 .portfolio-list-item {
-border: 1px solid  #E7E9FC;
+border: 1px solid #e7e9fc;
 width: 360px;
 width: calc((100% - 48px) / 3);
 }
@@ -312,7 +335,7 @@ margin-bottom: 8px;
 }
 
 .container-portfolio-item {
-margin: 32px auto 32px 16px;
+margin: 32px 16px;
 }
 
 /*------------------------------*/
@@ -325,19 +348,17 @@ background-color: #2e2f42 ;
 }
 
 .footer-container {
-margin-right: 1020px;
-margin-left: 156px;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .footer-logo{
-  display: block;
-  margin-top: 100px;
+  display: inline-block;
+  margin-bottom: 16px
 }
 
 .footer-text {
   max-width: 264px;
-margin-top: 16px;
-margin-bottom: 100px;
 color: #f4f4fd;
 }
 
