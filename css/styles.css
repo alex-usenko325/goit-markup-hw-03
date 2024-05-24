@@ -225,8 +225,8 @@ background-color: #404BBF;
 
 }
 
-.feature-title {
-position: absolute;
+.visually-hidden {
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -237,6 +237,9 @@ position: absolute;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.feature-title {
 margin-bottom: 72px;
 }
 
@@ -306,7 +309,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 /*---------------------section Our Portfolio-------------------*/
 
 .portfolio {
-  padding: 32px 16px;
 }
 
 .portfolio-titel {
@@ -321,7 +323,7 @@ column-gap: 24px;
 }
 
 .portfolio-list-item {
-border: 1px solid #e7e9fc;
+
 width: 360px;
 width: calc((100% - 48px) / 3);
 }
@@ -335,7 +337,9 @@ margin-bottom: 8px;
 }
 
 .container-portfolio-item {
-margin: 32px 16px;
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
 }
 
 /*------------------------------*/
@@ -344,12 +348,12 @@ margin: 32px 16px;
 
 .footer {
 background-color: #2e2f42 ;
-
+padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-container {
-padding-top: 100px;
-padding-bottom: 100px;
+
 }
 
 .footer-logo{
