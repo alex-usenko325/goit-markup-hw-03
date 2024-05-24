@@ -264,6 +264,8 @@ gap: 24px;
  background-color: #FFFFFF;
  width: 264px;
  width: calc((100% - 72px) / 4);
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
 
 .team-list-title {
@@ -291,7 +293,8 @@ gap: 24px;
 .portfolio-list {
 display: flex;
 flex-wrap: wrap;
-gap: 24px;
+column-gap: 24px;
+row-gap: 48px;
 }
 
 .portfolio-list-item {
